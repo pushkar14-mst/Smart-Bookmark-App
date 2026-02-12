@@ -31,7 +31,6 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -51,9 +50,11 @@ export default function DashboardPage() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-8 space-y-6">
         <AddBookmarkForm />
+        <h2 className="text-lg text-gray-700 font-medium">
+          Your Bookmark List
+        </h2>
         <BookmarkList />
       </main>
     </div>
